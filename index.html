@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Splash Screen Section -->
+    <section id="splash-screen" class="splash-screen">
+        <!-- Background image container -->
+        <div class="splash-background" style="background-image: url('assets/bg.png');"></div>
+
+        <!-- Decorative Floral Asset 1 (top-left) - Floating animation -->
+        <div class="decorative-asset floral-1">
+            <img src="assets/floral 1.png" alt="Floral Decoration 1">
+        </div>
+
+        <!-- Decorative Floral Asset 2 (bottom-right) - Floating animation -->
+        <div class="decorative-asset floral-2">
+            <img src="assets/floral 2.png" alt="Floral Decoration 2">
+        </div>
+
+        <!-- Decorative Dot Up (top-center) -->
+        <div class="decorative-asset dot-up">
+            <img src="assets/Dot Up.svg" alt="Dot Decoration Up">
+        </div>
+
+        <!-- Decorative Dot Low (bottom-center) -->
+        <div class="decorative-asset dot-low">
+            <img src="assets/Dot low.svg" alt="Dot Decoration Low">
+        </div>
+
+        <!-- Title Asset (top of content) -->
+        <div class="decorative-asset title-asset">
+            <img src="assets/Title.svg" alt="Wedding Title">
+        </div>
+
+        <!-- Main Content Container with Glassmorphism Card -->
+        <div class="content-wrapper">
+            <div class="glassmorphism-card">
+                <!-- Wedding Title Text -->
+                <h1 class="wedding-title">The Wedding Of</h1>
+
+                <!-- Bride and Groom Names Container -->
+                <div class="names-container">
+                    <!-- Bride Name SVG -->
+                    <div class="bride-name">
+                        <img src="assets/Bride.svg" alt="Bride Name">
+                    </div>
+
+                    <!-- Ampersand SVG -->
+                    <div class="ampersand">
+                        <img src="assets/&.svg" alt="And">
+                    </div>
+
+                    <!-- Groom Name SVG -->
+                    <div class="groom-name">
+                        <img src="assets/Groom.svg" alt="Groom Name">
+                    </div>
+                </div>
+
+                <!-- Guest Name Container -->
+                <div class="guest-info">
+                    <!-- Dear SVG -->
+                    <div class="dear-text">
+                        <img src="assets/Dear.svg" alt="Dear">
+                    </div>
+                    <!-- Guest Name (dynamic from URL parameter) -->
+                    <p class="guest-name" id="guest-name">Our Valued Guest</p>
+                </div>
+
+                <!-- Call-to-Action Button -->
+                <button class="open-invitation-btn" id="open-invitation-btn">
+                    Open Invitation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section (slides up after button click) -->
+    <section id="main-content" class="main-content">
+        <h2>More Content Goes Here</h2>
+        <p>This section will be revealed when you click "Open Invitation"</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
